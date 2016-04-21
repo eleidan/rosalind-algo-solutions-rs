@@ -1,2 +1,1 @@
-# rosalind-algo-solutions-rs
-Rosalind Algorithmic Heights Solutions
+# Rosalind Algorithmic Heights Solutions

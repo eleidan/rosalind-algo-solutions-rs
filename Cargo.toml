@@ -1,0 +1,6 @@
+[package]
+name = "rosalind-algo-solutions"
+version = "0.1.0"
+authors = ["Oleg «Eleidan» Kulyk <helh.saintman@gmail.com>"]
+
+[dependencies]
