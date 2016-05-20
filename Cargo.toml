@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["Oleg «Eleidan» Kulyk <helh.saintman@gmail.com>"]
 
 [dependencies]
+num = "0.1"
+docopt = "*"
+rustc-serialize = "0.3"
+rosalind-algo = { git = "https://github.com/eleidan/rosalind-algo-rs.git", rev = "3d69fae68246894311f76a64729cd639bfa16eb2" }
