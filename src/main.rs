@@ -45,7 +45,7 @@ fn main() {
                     .unwrap_or_else(|e| e.exit());
 
     match args.arg_command {
-        None => { print!("{}", USAGE) },
+        None => println!("{}", USAGE.trim()),
         Some(cmd) => {
             match cmd.run() {
                 Ok(()) => process::exit(0),

@@ -26,7 +26,7 @@ pub fn run(argv: &[&str]) -> CliResult<()> {
             fibonacci2(input);
             println!("{}", fibonacci2(input));
         }
-        None        => unreachable!()
+        None        => println!("{}", USAGE.trim())
     }
 
     Ok(())

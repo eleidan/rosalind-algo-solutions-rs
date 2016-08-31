@@ -27,7 +27,7 @@ pub fn run(argv: &[&str]) -> CliResult<()>  {
         Some(input) => {
             println!("{}", input);
         }
-        None        => unreachable!()
+        None        => println!("{}", USAGE.trim())
     }
 
     Ok(())
