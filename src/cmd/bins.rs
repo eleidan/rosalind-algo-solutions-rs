@@ -17,7 +17,7 @@ struct Args {
     arg_input: Option<u64>,
 }
 
-pub fn run(argv: &[&str]) -> CliResult<()>  {
+pub fn run(argv: &[&str]) -> CliResult<()> {
     let args: Args = try!(util::get_args(USAGE, argv));
 
     println!("Dispatching subcommand arguments:");
@@ -27,7 +27,7 @@ pub fn run(argv: &[&str]) -> CliResult<()>  {
         Some(input) => {
             println!("{}", input);
         }
-        None        => println!("{}", USAGE.trim())
+        None => println!("{}", USAGE.trim()),
     }
 
     Ok(())

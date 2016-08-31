@@ -39,10 +39,12 @@ struct Args {
 
 fn main() {
     let args: Args = Docopt::new(USAGE)
-                    .and_then(|docopt| docopt.options_first(true)
-                                             .version(Some(util::version()))
-                                             .decode())
-                    .unwrap_or_else(|e| e.exit());
+        .and_then(|docopt| {
+            docopt.options_first(true)
+                .version(Some(util::version()))
+                .decode()
+        })
+        .unwrap_or_else(|e| e.exit());
 
     match args.arg_command {
         None => println!("{}", USAGE.trim()),
