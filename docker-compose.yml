@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    image: eleidan/rust
+    environment:
+      - CARGO_HOME=/usr/src/app/.cargo
+    volumes:
+      - .:/usr/src/app
+      - .docker/app/home/.bash_history:/root/.bash_history

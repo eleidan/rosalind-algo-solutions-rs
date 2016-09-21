@@ -1,6 +1,6 @@
 use CliResult;
 use util;
-use rosalind_algo::fibo::fibonacci2;
+use rosalind_algo::fibo::fibonacci;
 
 static USAGE: &'static str = "
 Computes Fibonacci number
@@ -23,8 +23,7 @@ pub fn run(argv: &[&str]) -> CliResult<()> {
 
     match args.arg_input {
         Some(input) => {
-            fibonacci2(input);
-            println!("{}", fibonacci2(input));
+            println!("{}", fibonacci(input));
         }
         None => println!("{}", USAGE.trim()),
     }
