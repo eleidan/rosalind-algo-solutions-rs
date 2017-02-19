@@ -1,9 +1,9 @@
 version: '2'
 services:
-  app:
-    image: eleidan/rust
+  dev:
+    image: eleidan/rust:nightly-jessie
     environment:
-      - CARGO_HOME=/usr/src/app/.cargo
+      - CARGO_HOME=/home/phantom/app/.cargo
     volumes:
-      - .:/usr/src/app
-      - .docker/app/home/.bash_history:/root/.bash_history
+      - .:/home/phantom/app
+      - .docker/.bash_history:/home/phantom/.bash_history
